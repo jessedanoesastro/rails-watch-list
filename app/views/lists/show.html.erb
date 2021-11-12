@@ -3,7 +3,7 @@
 <h4>Bookmarks</h4>
 <% @list.bookmarks.each do |bookmark| %>
 <li>
-<%= bookmark.movie.title%>: <%= bookmark.comment %>
+<%= bookmark.movie.title%>: <%= bookmark.comment %> |
 <%= link_to '🗑', bookmark_path(bookmark), method: :delete %>
 </li>
 <% end %>
